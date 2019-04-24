@@ -13,7 +13,7 @@ import  os
 from tqdm import tqdm
 import re
 
-class dyVideoDown(object):
+class DyVideoDown(object):
     '下载抖音无水印视频,模拟post请求'
     def __init__(self):
         self.url = 'http://dy.wsdr8.cn/douyin.php'
@@ -116,16 +116,3 @@ class dyVideoDown(object):
         ctx = execjs.compile(js)
         return ctx.call('test', a)
 
-class dyVideoDown2():
-    def __init__(self):
-        browser_name = 'chrome'
-        executable_path = '/usr/local/bin/chromedriver'
-        self.driver = Browser(driver_name=browser_name, executable_path=executable_path)
-if __name__ == '__main__':
-    dy_url = 'http://v.douyin.com/jTpfnb/'
-    dy_down = dyVideoDown()
-    dy_final_url = dy_down.get_video_url(dy_url=dy_url)
-    if dy_final_url:
-        dy_down.download(dy_final_url, '1.mp4', 'dy_mp4')
-    else:
-        print u'找不到链接'
