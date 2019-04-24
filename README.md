@@ -1,5 +1,4 @@
 # python project
-![py27][py27]
 
 ## Douyin
 python2.7版本,Pychram运行环境，Pychram 不是必要条件
