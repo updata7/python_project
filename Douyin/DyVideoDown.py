@@ -4,7 +4,6 @@
 import requests
 import json
 import time
-import itchat
 import execjs
 import splinter
 from splinter.browser import Browser
