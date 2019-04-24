@@ -1,7 +1,7 @@
 # python project
 
 ## Douyin
-python2.7版本,Pychram运行环境，Pychram 不是必要条件
+python2.7版本，Pychram运行环境，Pychram 不是必要条件
 
 此项目是抖音去水印并下载短视频到本地
 
